@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - devAether</title>
+    <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+</head>
+<body>
+    <div class="container">
+        <canvas id="particles"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="scan-line"></div>
+        
+        <nav class="glass-sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon">
+                    <img src="{{ "img/a.jpg" | relURL }}" alt="devAether" class="sidebar-avatar">
+                </div>
+                <span class="logo-text">devAether</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ "/" | relURL }}" class="nav-link">
+                        <span class="nav-icon">◈</span>
+                        <span class="nav-text">首页</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ "/about" | relURL }}" class="nav-link">
+                        <span class="nav-icon">◇</span>
+                        <span class="nav-text">关于</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ "/projects" | relURL }}" class="nav-link">
+                        <span class="nav-icon">◆</span>
+                        <span class="nav-text">项目</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ "/skills" | relURL }}" class="nav-link">
+                        <span class="nav-icon">◈</span>
+                        <span class="nav-text">技能</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ "/contact" | relURL }}" class="nav-link">
+                        <span class="nav-icon">◇</span>
+                        <span class="nav-text">联系</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ "/posts" | relURL }}" class="nav-link">
+                        <span class="nav-icon">◆</span>
+                        <span class="nav-text">博客</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">在线</span>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="top-left-text">Get to know me better</div>
+        
+        <main class="content">
+            {{ block "main" . }}{{ end }}
+        </main>
+        
+        <footer class="footer">
+            <div class="copyright">
+                <span class="blink">●</span> SYSTEM ONLINE
+            </div>
+        </footer>
+    </div>
+    
+    <script src="{{ "script.js" | relURL }}"></script>
+</body>
+</html>

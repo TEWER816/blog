@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devAether - 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="particles"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="scan-line"></div>
+        
+        <nav class="glass-sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon">
+                    <img src="img/a.jpg" alt="devAether" class="sidebar-avatar">
+                </div>
+                <span class="logo-text">devAether</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="#home" class="nav-link">
+                        <span class="nav-icon">◈</span>
+                        <span class="nav-text">首页</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <span class="nav-icon">◇</span>
+                        <span class="nav-text">关于</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <span class="nav-icon">◆</span>
+                        <span class="nav-text">项目</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <span class="nav-icon">◈</span>
+                        <span class="nav-text">技能</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <span class="nav-icon">◇</span>
+                        <span class="nav-text">联系</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#posts" class="nav-link">
+                        <span class="nav-icon">◆</span>
+                        <span class="nav-text">博客</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">在线</span>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="top-left-text">Get to know me better</div>
+        
+        <main class="content">
+            <section id="home" class="page-section active">
+                <div class="profile-section">
+                    <div class="avatar-container">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-inner">
+                            <img src="img/a.jpg" alt="devAether" class="avatar-img">
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    
+                    <h1 class="name">devAether</h1>
+                    <div class="info-line">
+                        <span class="label">性别</span>
+                        <span class="value">男</span>
+                    </div>
+                    <div class="signature">
+                        <p class="signature-text">因为热爱，所以坚持！</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="page-section">
+                <div class="about-section">
+                    <h2 class="section-title">关于我</h2>
+                    <div class="about-content">
+                        <p class="about-text">你好，我是 devAether，一名热爱技术的开发者。</p>
+                        <p class="about-text">我专注于Python开发和TTS（文本转语音）技术，致力于创造优秀的语音合成应用。</p>
+                        <p class="about-text">因为热爱，所以坚持！这是我对待每一项工作的态度。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="page-section">
+                <div class="projects-section">
+                    <h2 class="section-title">我的项目</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-icon">◈</div>
+                            <h3 class="project-title">TTS语音合成</h3>
+                            <p class="project-desc">基于Python的文本转语音应用</p>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-icon">◇</div>
+                            <h3 class="project-title">语音数据处理</h3>
+                            <p class="project-desc">音频信号处理与优化</p>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-icon">◆</div>
+                            <h3 class="project-title">AI语音助手</h3>
+                            <p class="project-desc">智能语音交互系统</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="page-section">
+                <div class="skills-section">
+                    <h2 class="section-title">技能专长</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">TTS技术</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">深度学习</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">音频处理</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Web开发</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="page-section">
+                <div class="contact-section">
+                    <h2 class="section-title">联系方式</h2>
+                    <div class="contact-content">
+                        <div class="contact-item">
+                            <span class="contact-icon">◈</span>
+                            <span class="contact-text">zxcvbnmqqw2023@163.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">◇</span>
+                            <a href="https://github.com/TEWER816?tab=repositories" class="contact-link" target="_blank">GitHub</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">◆</span>
+                            <span class="contact-text">欢迎交流合作</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="posts" class="page-section">
+                <div class="posts-section">
+                    <h2 class="section-title">博客文章</h2>
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <div class="post-date">2026-01-17</div>
+                            <h3 class="post-title">
+                                <a href="#post-blog-welcome">博客入驻 - 开始我的技术之旅</a>
+                            </h3>
+                            <p class="post-excerpt">欢迎来到我的个人博客！这里记录我在Python开发和TTS技术上的探索与成长。</p>
+                            <a href="#post-blog-welcome" class="post-read-more">阅读更多 →</a>
+                        </article>
+                        <article class="post-card">
+                            <div class="post-date">2026-01-17</div>
+                            <h3 class="post-title">
+                                <a href="#post-python-tts">Python TTS入门指南</a>
+                            </h3>
+                            <p class="post-excerpt">本文介绍如何使用Python进行文本转语音开发，从基础到进阶的完整指南。</p>
+                            <a href="#post-python-tts" class="post-read-more">阅读更多 →</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="copyright">
+                <span class="blink">●</span> SYSTEM ONLINE
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

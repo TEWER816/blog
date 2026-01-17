@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section id="posts" class="page-section active">
+    <div class="posts-section">
+        <h2 class="section-title">博客文章</h2>
+        <div class="posts-grid">
+            {{ range .Pages }}
+            <article class="post-card">
+                <div class="post-date">{{ .Date.Format "2006-01-02" }}</div>
+                <h3 class="post-title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h3>
+                <p class="post-excerpt">{{ .Summary }}</p>
+                <a href="{{ .RelPermalink }}" class="post-read-more">阅读更多 →</a>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

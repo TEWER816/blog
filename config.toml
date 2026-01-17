@@ -1,0 +1,8 @@
+baseURL = "https://teewer816.github.io/blog/"
+languageCode = "zh-cn"
+title = "devAether的博客"
+theme = ""
+
+[params]
+  author = "devAether"
+  description = "专注于Python开发和TTS技术"
